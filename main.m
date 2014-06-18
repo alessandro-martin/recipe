@@ -13,7 +13,7 @@ int main (int argc, const char * argv[])
 		NSLog(@"These are the ingredients of my favorite %@", recipe);
 		[ingredients enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop)
 		 {
-			 NSLog(@"%lu) %@", idx, obj);
+			 NSLog(@"%lu) %@", idx + 1, obj);
 		 }];
 	}
 	return 0;
